@@ -14,7 +14,7 @@ snake = Snake()
 food = Food()
 score = ScoreBoard()
 
-
+# Make the screen react to the keys
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
@@ -33,7 +33,7 @@ while game_is_on:
 
 # detect collision with the wall
 
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
         game_is_on = False
         score.game_over()
 
